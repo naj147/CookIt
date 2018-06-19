@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/round_bg"
+    android:paddingLeft="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/minusImage"
+        android:tag="activated"
+        android:src="@drawable/minus_activated"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/ingredient"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="Ingredient 1"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/minusImage"
+        android:layout_toLeftOf="@id/plusImage" />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/plusImage"
+        android:tag="deactivated"
+        android:src="@drawable/plus_deactivated"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

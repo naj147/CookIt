@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/souchet_icon"
+        android:layout_marginTop="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="invisible"
+        android:contentDescription="icon of the enterprise" />
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/emailInput"
+    android:layout_marginTop="40dp"
+    android:minWidth="200dp"
+    android:layout_gravity="center_horizontal"
+    android:maxWidth="300dp"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/email"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Email"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/eigthyperc_cyan"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="16dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+</android.support.design.widget.TextInputLayout>
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:textColorHint="#000000">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:textCursorDrawable="@android:color/black"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:textColor="#000000" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passInput"
+        android:layout_marginTop="20dp"
+        android:minWidth="200dp"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pass"
+            android:minWidth="200dp"
+            android:maxWidth="300dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="@color/eigthyperc_cyan"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/signIn1"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:backgroundTint="@color/fourthyfiveyperc_cyan"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:text="not a member yet?"/>
+        <Button
+            android:id="@+id/signup1"
+            android:background="@drawable/round_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:backgroundTint="@color/poping_red"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_above="@id/cookitText"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_google" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cookitText"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:textColor="@color/poping_red"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cookit ©"/>
+    </RelativeLayout>
+
+</LinearLayout>

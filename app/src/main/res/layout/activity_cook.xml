@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="3dp"
+    tools:context=".CookActivity">
+    <FrameLayout
+        android:id="@+id/recipeImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/recipeImage"
+            android:src="@drawable/friedlo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Recipe"
+            android:scaleType="fitXY"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_bg" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/recipeTitle"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Recipe Name 1"
+        android:layout_above="@id/my_recycler_view"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:textColor="@android:color/white"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/my_recycler_view"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Ingredients List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/my_recycler_view"
+        android:layout_below="@id/recipeImageLayout"
+        android:layout_above="@id/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_above="@id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_height="140dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to my shopping list"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/addShoppingList"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/fourthyfiveyperc_cyan"
+            android:background="@drawable/round_bg"/>
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/addShoppingList"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Next"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/next"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/poping_red"
+            android:background="@drawable/round_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>

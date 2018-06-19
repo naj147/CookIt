@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingListFragment">
+        <ImageView
+            android:id="@+id/shoppingListImg"
+            android:src="@drawable/paper_list"
+            android:layout_margin="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="shopping list icon" />
+        <TextView
+            android:layout_below="@id/shoppingListImg"
+            android:id="@+id/shoppingListInText"
+            android:text="Your Shopping List"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <View
+        android:layout_margin="10dp"
+        android:id="@+id/horizontal_divider"
+        android:layout_below="@id/shoppingListInText"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    <FrameLayout
+        android:layout_below="@id/horizontal_divider"
+        android:layout_above="@id/second_horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/nts"
+            android:src="@drawable/nts"
+            android:layout_margin="20dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/my_recycler_view"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:id="@+id/second_horizontal_divider"
+        android:layout_above="@id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calendar"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/confirm"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+</RelativeLayout>

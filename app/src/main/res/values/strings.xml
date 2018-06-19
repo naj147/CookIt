@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CookItV1</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_product_tour">product tour</string>
+    <string name="app_id">6d2f35dd</string>
+    <string name="app_keys">ed74980921254acf7f2a5c637769470c</string>
+    <string name="welcom_head_01">A wonderful cooking experience!</string>
+    <string name="welcom_content_01">You have the choice between community or professional recipes</string>
+    <string name="welcom_head_02">Guides you to your perfect dish</string>
+    <string name="welcom_content_02">For your convenience, search recipes, ingredients and release your inner chef!</string>
+    <string name="welcom_head_03">Cares for your safety</string>
+    <string name="welcom_content_03">Connect your SAFERA product and protect your home from kitchen fire.</string>
+    <string name="welcom_head_04">Edit Excel spreadsheets</string>
+    <string name="welcom_content_04">Open, edit, and save Excel files - all within Sheets.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
